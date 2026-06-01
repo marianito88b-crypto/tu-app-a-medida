@@ -30,7 +30,9 @@ const formatWhatsAppNumber = (number) => {
 };
 
 const applyConfig = () => {
-  document.title = `${SITE_CONFIG.brandName} | Apps y sistemas para negocios`;
+  document.title =
+    document.body.dataset.pageTitle ||
+    `${SITE_CONFIG.brandName} | Apps y sistemas para negocios`;
 
   document.querySelectorAll("[data-config]").forEach((element) => {
     const key = element.dataset.config;
@@ -39,11 +41,12 @@ const applyConfig = () => {
     }
   });
 
-  const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(
-    SITE_CONFIG.whatsappMessage
-  )}`;
-
   document.querySelectorAll("[data-whatsapp-link]").forEach((link) => {
+    const message = link.dataset.whatsappMessage || SITE_CONFIG.whatsappMessage;
+    const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
     link.href = whatsappUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer";

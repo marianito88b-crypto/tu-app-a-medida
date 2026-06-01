@@ -9,7 +9,7 @@ Abrí `script.js` y cambiá estos valores:
 ```js
 const SITE_CONFIG = {
   brandName: "Tu App a Medida",
-  whatsappNumber: "5493510000000",
+  whatsappNumber: "5493625163528",
   whatsappMessage: "Hola, quiero consultar por una app o sistema a medida para mi negocio.",
   instagramUrl: "https://www.instagram.com/tuappamedida",
   email: "hola@tuappamedida.com",
