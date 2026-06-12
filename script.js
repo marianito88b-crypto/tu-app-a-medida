@@ -10,13 +10,14 @@ const SITE_CONFIG = {
     barapp: {
       playStore: "https://play.google.com/store/search?q=barapp",
       appStore: "https://apps.apple.com/ar/app/barapp/id6757483657",
+      landing: "https://barapp-social.web.app/panel-duenos-conversion.html",
     },
     gyms: {
       playStore: "https://play.google.com/store/apps/details?id=com.mariano.findmygym",
       appStore: "https://apps.apple.com/fr/app/gyms/id6746703158?l=en-GB",
     },
     multirubro: "https://sistema-gestion-pro.vercel.app/",
-    barberia: "https://sistema-gestion-pro.vercel.app/",
+    barberia: "https://sistema-gestion-pro.vercel.app/barberias",
     odontologico: "https://pinodont.vercel.app/",
   },
 };

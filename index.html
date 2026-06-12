@@ -8,20 +8,30 @@
       content="Desarrollo de apps y sistemas a medida en Resistencia, Chaco. Catálogos, stock, facturación, turnos y más para comercios, pymes y emprendedores."
     />
     <title>Tu App a Medida | Apps y sistemas para negocios</title>
+    <meta name="theme-color" content="#050910" />
+    <meta property="og:image" content="assets/icon-brand.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/icon-brand.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/icon-brand.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="site-shell">
       <header class="site-header" data-header>
         <a class="brand" href="#inicio" aria-label="Ir al inicio">
-          <span class="brand-mark">TA</span>
+          <img
+            class="brand-mark"
+            src="assets/icon-brand.png"
+            alt=""
+            width="42"
+            height="42"
+            decoding="async"
+          />
           <span data-config="brandName">Tu App a Medida</span>
         </a>
 
@@ -71,63 +81,34 @@
             </div>
           </div>
 
-          <div class="hero-visual reveal is-visible" aria-label="Vista previa de sistema de gestión">
-            <div class="dashboard-preview">
-              <div class="preview-topbar">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="preview-header">
-                <div>
-                  <p>Panel del negocio</p>
-                  <strong>Ventas, stock y pedidos</strong>
-                </div>
-                <span class="status-pill">Online</span>
-              </div>
-              <div class="metric-grid">
-                <div class="metric-tile">
-                  <span>Ventas visibles</span>
-                  <strong>$248k</strong>
-                  <small>Control diario</small>
-                </div>
-                <div class="metric-tile">
-                  <span>Pedidos activos</span>
-                  <strong>42</strong>
-                  <small>Ordenados</small>
-                </div>
-                <div class="metric-tile">
-                  <span>Stock bajo</span>
-                  <strong>8</strong>
-                  <small>Alertas</small>
-                </div>
-              </div>
-              <div class="preview-list">
-                <div>
-                  <span class="list-icon"></span>
-                  <p>Carta digital QR actualizada</p>
-                  <strong>Activa</strong>
-                </div>
-                <div>
-                  <span class="list-icon list-icon-green"></span>
-                  <p>Reserva para las 21:30</p>
-                  <strong>Confirmada</strong>
-                </div>
-                <div>
-                  <span class="list-icon list-icon-violet"></span>
-                  <p>Pago con Mercado Pago</p>
-                  <strong>Aprobado</strong>
-                </div>
+          <div class="hero-visual reveal is-visible" aria-label="Identidad Tu App a Medida">
+            <div class="hero-brand-showcase">
+              <div class="hero-brand-ring" aria-hidden="true"></div>
+              <div class="hero-brand-ring hero-brand-ring--inner" aria-hidden="true"></div>
+              <img
+                class="hero-brand-icon"
+                src="assets/icon-brand.png"
+                alt="Tu App a Medida — desarrollo de apps y sistemas para bares, gimnasios, consultorios y comercios"
+                width="400"
+                height="400"
+                loading="eager"
+                decoding="async"
+              />
+              <div class="hero-brand-tags" aria-label="Rubros que desarrollamos">
+                <span>Bares</span>
+                <span>Gimnasios</span>
+                <span>Odontología</span>
+                <span>Barberías</span>
               </div>
             </div>
 
             <div class="floating-note note-one">
               <span data-lucide="smartphone"></span>
-              App para tus clientes
+              Apps a medida
             </div>
             <div class="floating-note note-two">
-              <span data-lucide="bar-chart-3"></span>
-              Decisiones con datos
+              <span data-lucide="cpu"></span>
+              Sistemas que funcionan
             </div>
           </div>
         </section>
@@ -167,9 +148,9 @@
               </div>
               <ul class="about-list">
                 <li>Apps móviles para bares y gimnasios, ya publicadas en las tiendas.</li>
-                <li>Sistema multirubro para kioscos, carnicerías, pollerías y más.</li>
-                <li>Sistema odontológico con agenda, pacientes e historial clínico.</li>
-                <li>Adaptación del sistema multirubro con modo barbería.</li>
+                <li>Sistema Pro para kioscos, carnicerías, pollerías y comercios.</li>
+                <li>Sistema Pro para barberías con turnos, servicios y comisiones.</li>
+                <li>Sistema odontológico Pinodont con agenda, pacientes e historial clínico.</li>
                 <li>App en desarrollo para tiendas de alimentos para mascotas.</li>
               </ul>
               <a class="text-link" href="#" data-whatsapp-link>Contame tu idea por WhatsApp →</a>
@@ -215,6 +196,7 @@
               <h3>Barapp</h3>
               <p>App para bares: carta digital, pedidos, reservas y gestión pensada para la gastronomía nocturna.</p>
               <div class="project-badges">
+                <a class="project-badge is-accent" href="#" data-project-link="barapp" data-store="landing">Ver landing</a>
                 <a class="project-badge is-accent" href="#" data-project-link="barapp" data-store="playStore">Play Store</a>
                 <a class="project-badge is-accent" href="#" data-project-link="barapp" data-store="appStore">App Store</a>
               </div>
@@ -236,41 +218,55 @@
               </div>
             </article>
             <article class="project-card reveal">
-              <span class="project-icon-placeholder" aria-hidden="true">
-                <span data-lucide="store"></span>
-              </span>
-              <h3>Sistema multirubro</h3>
+              <img
+                class="project-icon"
+                src="assets/icon-sistema-pro.png"
+                alt="Icono de Sistema Pro Kioscos"
+                width="76"
+                height="76"
+                loading="lazy"
+              />
+              <h3>Sistema Pro · Kioscos</h3>
               <p>Panel de gestión para kioscos, carnicerías, pollerías y comercios. Ventas, stock, caja y reportes en un solo lugar.</p>
               <div class="project-badges">
                 <a class="project-badge is-accent" href="sistema-pro.html">Ver landing</a>
-                <a class="project-badge" href="#" data-project-link="multirubro">Demo</a>
+                <a class="project-badge is-accent" href="#" data-project-link="multirubro">Ver demo</a>
                 <span class="project-badge">Kioscos</span>
                 <span class="project-badge">Carnicerías</span>
               </div>
             </article>
             <article class="project-card reveal">
-              <span class="project-icon-placeholder" aria-hidden="true">
-                <span data-lucide="stethoscope"></span>
-              </span>
-              <h3>Sistema odontológico</h3>
+              <img
+                class="project-icon"
+                src="assets/icon-sistema-pro-barberias.png"
+                alt="Icono de Sistema Pro Barberías"
+                width="76"
+                height="76"
+                loading="lazy"
+              />
+              <h3>Sistema Pro · Barberías</h3>
+              <p>Turnos, clientes, servicios, barberos, comisiones y caja pensado para barberías que quieren orden y control.</p>
+              <div class="project-badges">
+                <a class="project-badge is-accent" href="#" data-project-link="barberia">Ver landing</a>
+                <span class="project-badge">Turnos</span>
+                <span class="project-badge">Comisiones</span>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <img
+                class="project-icon"
+                src="assets/icon-pinodont.png"
+                alt="Icono de Pinodont"
+                width="76"
+                height="76"
+                loading="lazy"
+              />
+              <h3>Pinodont</h3>
               <p>Gestión de pacientes, historial clínico, agenda de turnos y seguimiento para consultorios odontológicos.</p>
               <div class="project-badges">
                 <a class="project-badge is-accent" href="#" data-project-link="odontologico">Ver demo en vivo</a>
                 <span class="project-badge">Agenda</span>
                 <span class="project-badge">Historial clínico</span>
-              </div>
-            </article>
-            <article class="project-card reveal">
-              <span class="project-icon-placeholder" aria-hidden="true">
-                <span data-lucide="scissors"></span>
-              </span>
-              <h3>Modo barbería</h3>
-              <p>Adaptación del sistema multirubro para barberías: turnos, clientes, servicios y caja desde el celular.</p>
-              <div class="project-badges">
-                <a class="project-badge is-accent" href="sistema-pro.html">Ver landing</a>
-                <a class="project-badge" href="#" data-project-link="barberia">Demo</a>
-                <span class="project-badge">Turnos</span>
-                <span class="project-badge">Clientes</span>
               </div>
             </article>
             <article class="project-card reveal">
@@ -428,7 +424,7 @@
           <div class="service-grid">
             <article class="service-card reveal">
               <span class="card-icon" data-lucide="store"></span>
-              <h3>Sistema multirubro</h3>
+              <h3>Sistema Pro · Kioscos</h3>
               <p>Para comercios que quieren dejar de depender de anotaciones y planillas sueltas.</p>
               <ul>
                 <li>Ventas y caja diaria</li>
@@ -448,7 +444,7 @@
             </article>
             <article class="service-card reveal">
               <span class="card-icon" data-lucide="stethoscope"></span>
-              <h3>Sistema odontológico</h3>
+              <h3>Pinodont</h3>
               <p>Para consultorios que necesitan agenda, pacientes, historial, pagos y seguimiento.</p>
               <ul>
                 <li>Ficha de pacientes</li>
@@ -458,8 +454,8 @@
             </article>
             <article class="service-card reveal">
               <span class="card-icon" data-lucide="scissors"></span>
-              <h3>Barberías</h3>
-              <p>Para manejar turnos, clientes, servicios, caja y recordatorios desde el celular.</p>
+              <h3>Sistema Pro · Barberías</h3>
+              <p>Para manejar turnos, clientes, servicios, barberos, comisiones y caja desde el celular.</p>
               <ul>
                 <li>Reservas por horario</li>
                 <li>Clientes frecuentes</li>
@@ -681,7 +677,15 @@
       <footer class="site-footer">
         <div>
           <a class="brand" href="#inicio">
-            <span class="brand-mark">TA</span>
+            <img
+              class="brand-mark"
+              src="assets/icon-brand.png"
+              alt=""
+              width="42"
+              height="42"
+              loading="lazy"
+              decoding="async"
+            />
             <span data-config="brandName">Tu App a Medida</span>
           </a>
           <p>
